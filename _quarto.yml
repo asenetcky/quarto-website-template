@@ -1,0 +1,45 @@
+author: 
+  - name: Alexander J. Senetcky
+    orcid: 0009-0009-3730-5397
+    email: me@asenetcky.dev
+    degrees: 
+      - BS
+      - MPH
+    url: https://asenetcky.dev
+author-title: "Data Scientist"
+
+title-block-banner: "black"
+number-sections: true
+
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-title: "Contents"
+
+    other-links:
+          # - text: Source Code
+          #   href: https://github.com/asenetcky/ggplot2-overview
+          #   icon: "github"
+          # - text: R-User Group's GitHub
+          #   href: https://github.com/CTOpenData/r-user-group
+          #   icon: "github"
+          # - text: OPM CT Data Viz Guidelines
+          #   href: https://ctopendata.github.io/data-visualization-guidelines/
+          #   icon: "box-arrow-up-right"
+          - text: github.com/asenetcky
+            href: https://github.com/asenetcky
+            icon: "github"
+          - text: My ORCID
+            href: https://orcid.org/0009-0009-3730-5397
+            icon: "box-arrow-up-right"
+          - text: My Linkedin
+            href: https://www.linkedin.com/in/alexander-senetcky-0b209822/
+            icon: "linkedin"
+
+execute:
+  freeze: auto
+
+editor: source
+
+theme: lux
