@@ -1,45 +1,41 @@
-author: 
-  - name: Alexander J. Senetcky
-    orcid: 0009-0009-3730-5397
-    email: me@asenetcky.dev
-    degrees: 
-      - BS
-      - MPH
-    url: https://asenetcky.dev
-author-title: "Data Scientist"
-
-title-block-banner: "black"
-number-sections: true
-
-format:
-  html:
-    embed-resources: true
-    toc: true
-    toc-title: "Contents"
-
-    other-links:
-          # - text: Source Code
-          #   href: https://github.com/asenetcky/ggplot2-overview
-          #   icon: "github"
-          # - text: R-User Group's GitHub
-          #   href: https://github.com/CTOpenData/r-user-group
-          #   icon: "github"
-          # - text: OPM CT Data Viz Guidelines
-          #   href: https://ctopendata.github.io/data-visualization-guidelines/
-          #   icon: "box-arrow-up-right"
-          - text: github.com/asenetcky
-            href: https://github.com/asenetcky
-            icon: "github"
-          - text: My ORCID
-            href: https://orcid.org/0009-0009-3730-5397
-            icon: "box-arrow-up-right"
-          - text: My Linkedin
-            href: https://www.linkedin.com/in/alexander-senetcky-0b209822/
-            icon: "linkedin"
+project:
+  type: website
+  output-dir: docs
 
 execute:
   freeze: auto
 
-editor: source
+website:
+  title: "Template Website"
+  navbar:
+    title: "Template Website"
+    right:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - text: Contact
+        menu:
+          - icon: linkedin
+            text: Linkedin
+            href: https://www.linkedin.com/in/alexander-senetcky-0b209822
+            target: _blank
+          - icon: envelope
+            text: Email
+            href: mailto:me@asenetcky.dev
+      - icon: github
+        href: https://github.com/asenetcky
+        target: _blank
+  page-footer:
+    left: © 2025 Alexander Senetcky
+    right: This website is built with [Quarto]("https://quarto.org/") and [GitHub]("https://github.com")
+  draft-mode: unlinked
 
-theme: lux
+  repo-url: https://github.com/asenetcky/quarto-website-template
+  repo-actions: [edit, source, issue]
+
+format:
+  html:
+    page-layout: full
+    theme: yeti
+    css: styles.css
+    toc: true
